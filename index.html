@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- http-server -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" href="Styles/materialize.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="Styles/style.css"> -->
     <script src="Script/master.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ProgressiveApp</title>
 </head>
-<body>
-    <div class="bottom">
-    <header align="center">
-        <h1>Spaghetti!</h1>
-    </header>
-</div>
-    <div>
-        <img src="https://cms.splendidtable.org/sites/default/files/styles/w2000/public/Spaghetti-Pic__Photocredit-David-Loftus-LEDE.jpg?itok=-7KB2KCR" alt="spaghetti">
-    </div>
- <!-- cook time -->
- <button onclick="toggle2()">Information</button>
-<div class="bloat" id="cook2" display="block">
-    <p>Cook Time: 30 min</p>
-    <p>Do not set ablaze</p>
-</div> 
-<!-- ingredients  -->
-<button onclick="toggle()">Ingredients</button>
-<div class="right" id="cook" display="block">
-    <table>
-    <ul border="1px solid black">
-        <li>Noodles</li>
-        <li>meatballs</li>
-        <li>Tomatoes</li>
-    </ul>
-    </table>
-</div>
-<!-- directinos -->
-<div class="bottom">
-<ol>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-    <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-    <li>dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
-</ol>
-</div>
 
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="sass.html">Sass</a>
+                </li>
+                <li>
+                    <a href="badges.html">Components</a>
+                </li>
+                <li>
+                    <a href="collapsible.html">JavaScript</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="bottom">
+        <header align="center">
+            <h1>Spaghetti!</h1>
+        </header>
+    </div>
+    <div>
+        <!-- <img src="https://cms.splendidtable.org/sites/default/files/styles/w2000/public/Spaghetti-Pic__Photocredit-David-Loftus-LEDE.jpg?itok=-7KB2KCR" -->
+            alt="spaghetti">
+    </div>
+    <!-- cook time -->
+    <button onclick="toggle2()">Information</button>
+    <div class="bloat" id="cook2" display="block">
+        <p>Cook Time: 30 min</p>
+        <p>Do not set ablaze</p>
+    </div>
+    <!-- ingredients  -->
+    <a onclick="toggle()" class="btn">Ingredients</a>
+    <div class="right" id="cook" display="block">
+        <table>
+            <ul border="1px solid black">
+                <li>Noodles</li>
+                <li>meatballs</li>
+                <li>Tomatoes</li>
+            </ul>
+        </table>
+    </div>
+    <!-- directinos -->
+    <div class="bottom">
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+            <li>dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
+        </ol>
+    </div>
+
+    <script src="Script/materialize.min.js" />
 </body>
+
 </html>
