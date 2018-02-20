@@ -2,97 +2,73 @@
 <html lang="en">
 
 <head>
-    <!-- http-server -->
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Styles/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="Styles/style.css">
     <script src="Script/master.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recipe</title>
+    <title>Money Monster</title>
 </head>
 
 <body>
+    <!-- nav bar -->
     <nav>
-        <div class="nav-wrapper" class="top">
-            <a href="#" class="brand-logo"></a>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Money Monster</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
-                    <a href="badges.html">Home</a>
+                    <a href="user.html">Sign In</a>
                 </li>
                 <li>
-                    <a href="badges.html">Favorites</a>
+                    <a href="budget.html">Budget Sheets</a>
                 </li>
                 <li>
-                    <a href="collapsible.html">Shopping Cart</a>
+                    <a href="blog.html">Blogs</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-
-    <div class="bottom">
-        <header align="center">
-            <h1>Spaghetti!</h1>
-        </header>
-    </div>
-    <div>
-        <img src=""
-            alt="spaghetti">
-    </div>
-    <!-- cook time -->
-    <a onclick="toggle2()" class="btn">Information</a>
-    <div class="bloat" id="cook2" display="none">
-        <p>Cook Time: 30 min</p>
-        <p>Do not set ablaze</p>
-    </div>
-    <!-- ingredients  -->
-    <a onclick="toggle()" class="btn">Ingredients</a>
-    <div class="right" id="cook" display="none">
-        <table>
-            <ul border="1px solid black">
-                <li>Noodles</li>
-                <li>meatballs</li>
-                <li>Tomatoes</li>
-            </ul>
-        </table>
-    </div>
-    <!-- directinos -->
-    <div class="bottom">
-        <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-            <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-            <li>dolore eu fugiat nulla pariatur. Excepteur sint occaecat</li>
-        </ol>
-    </div>
-
-    <footer class="page-footer">
-            <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h5 class="white-text">Footer Content</h5>
-                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    <!-- sign in form -->
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="First Name" id="first_name" type="text" class="validate" required>
+                    <label for="first_name"></label>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Links</h5>
-                  <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                  </ul>
+                <div class="input-field col s6">
+                    <input placeholder="Last Name" id="last_name" type="text" class="validate" required>
+                    <label for="last_name"></label>
                 </div>
-              </div>
             </div>
-            <div class="footer-copyright">
-              <div class="container">
-              © 2014 Copyright Text
-              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-              </div>
+            <div class="row">
             </div>
-          </footer>
-              
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Email" id="password" type="text" class="validate" required>
+                    <label for="pass"></label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Password" id="password" type="password" class="validate" required>
+                    <label for="pass"></label>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col s12">
+                </div>
+            </div>
+        </form>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+        <a href="main.html">Log In</a>
+    </div>
+    <!-- footer -->
 
     <script src="Script/materialize.min.js" />
 </body>
