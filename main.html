@@ -33,7 +33,10 @@
     </nav>
     <h2>On Budget!</h2>
     <i id="balanceHealth" class="large material-icons">check</i>
-    <div class="graph">
+    <!-- Creates and Holds graph information -->
+    <a onclick="toggle()" class="waves-effect waves-light btn" width="10%">
+        <i class="material-icons left">show_chart</i>Toggle</a>
+    <div id="graph" display="block">
         <canvas id="myChart" width="100px" height="100px"></canvas>
         <script>
                 var ctx = document.getElementById("myChart");
