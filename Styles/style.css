@@ -1,7 +1,19 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 .nav-wrapper{
     background-color: green;
 }
 
 .btn waves-effect waves-light{
     margin-left: 5em;
+}
+.page-footer{
+    background-color: green;
 }

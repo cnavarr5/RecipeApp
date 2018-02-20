@@ -5,7 +5,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Styles/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="Styles/mainstyle.css">
-    <script src="Script/master.js"></script>
+    <script src="Script/mainscript.js"></script>
+    <script type="text/javascript" src="Script/jquery-3.3.1.min.js"></script>
+    <script src="Script/Chart.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,6 +31,85 @@
             </ul>
         </div>
     </nav>
+    <h2>On Budget!</h2>
+    <i id="balanceHealth" class="large material-icons">check</i>
+    <div class="graph">
+        <canvas id="myChart" width="100px" height="100px"></canvas>
+        <script>
+                var ctx = document.getElementById("myChart");
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255,99,132,1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                                }
+                            }]
+                        }
+                    }
+                });
+                </script>
+    </div>
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Money Monster</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Need Help?</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">About</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Help</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="Script/materialize.min.js" />
 </body>
 
