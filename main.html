@@ -31,18 +31,22 @@
         </div>
     </nav>
 
+    <form id="form" onsubmit="return false;">
+        <input style="width: 100px" type="text" id="userInput" />
+        <input style="width: 100px" type="submit" onclick="othername();" />
+    </form>
+
     <h2>On Budget!</h2>
     <i id="balanceHealth" class="large material-icons">check</i>
-    <!-- Creates and Holds graph information -->
+    <!-- Creates and Holds graph information -->    
     <div class="col 3 offset-3">
         <a onclick="toggle()" on-touch="toggle()" class="waves-effect waves-light btn" width="10%">
             <i class="material-icons left">show_chart</i>Toggle</a>
     </div>
 
-
     <div id="graph" display="block">
         <canvas id="myChart" width="100px" height="100px"></canvas>
-        <script>
+        <!-- <script>
             var ctx = document.getElementById("myChart");
             var myChart = new Chart(ctx, {
                 type: 'bar',
@@ -80,7 +84,7 @@
                     }
                 }
             });
-        </script>
+        </script> -->
     </div>
     <!-- footer -->
     <footer class="page-footer">
